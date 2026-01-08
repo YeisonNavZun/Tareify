@@ -1,55 +1,40 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block content %}
 
-<style>
-  .hero-image{
-    width: 100%;
-    max-width: 600px;   /* <-- MAS PEQUEÑA */
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.12);
-  }
+<Main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Tareify</h1>
+        <p>
+            Tareify es una aplicación diseñada para ayudarte a organizar tu día de manera simple, clara y eficiente.
+            Con ella podrás registrar tareas, establecer prioridades, marcar actividades completadas y llevar un control
+            real de todo lo que necesitas hacer, desde pendientes personales hasta proyectos académicos y laborales.
 
-  .hero-title{
-    font-size: 2.6rem;
-    font-weight: 700;
-  }
+            La aplicación permite crear nuevas tareas de forma rápida, asignar descripciones detalladas, definir niveles
+            de importancia y actualizar su estado conforme las vayas completando. También podrás consultar el historial
+            de tareas terminadas, visualizar las pendientes y gestionar tu tiempo de una manera mucho más ordenada.
 
-  .hero-sub{
-    max-width: 700px;
-    color: #555;
-  }
-</style>
+            Tareify está pensada para personas que desean mejorar su productividad, reducir el estrés por acumulación
+            de tareas y tener mayor control sobre sus actividades diarias. Su interfaz es intuitiva y fácil de usar, lo
+            que hace que cualquier usuario, sin importar su experiencia tecnológica, pueda comenzar a organizarse desde
+            el primer momento.
 
-<main class="container py-5 text-center">
+            Más que una simple lista de pendientes, Tareify se convierte en un compañero de organización personal. Te
+            ayuda a construir hábitos, cumplir objetivos y mantener el enfoque en lo que realmente importa. Ya sea que
+            necesites llevar control de estudios, trabajo, metas personales o recordatorios cotidianos, Tareify te
+            ofrece una solución práctica y confiable.
+        </p>
 
-  <!-- IMAGEN -->
-  <!-- <div class="mb-4">
-   <img src="{% static 'tasks/image/tareify_portada.png' %}"
-        class="hero-image">
-  </div> -->
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/signin">
+                Iniciar Sesión
+            </a>
+            <a class="btn btn-dark" href="/signup">
+                Crear Usuario
+            </a>
+        </div>
 
-  <!-- TITULO -->
-  <h1 class="hero-title mb-3">Tareify</h1>
-
-  <!-- DESCRIPCIÓN -->
-  <p class="hero-sub mx-auto">
-    Organiza tus tareas de manera simple, clara y eficiente. Crea, gestiona y prioriza
-    tus actividades diarias y proyectos sin complicaciones.
-  </p>
-
-  <!-- BOTONES -->
-  <div class="mt-4">
-    <a href="/signin" class="btn btn-dark btn-lg me-2 px-4">
-      Iniciar Sesión
-    </a>
-
-    <a href="/signup" class="btn btn-outline-dark btn-lg px-4">
-      Crear Cuenta
-    </a>
-  </div>
-
-</main>
+    </section>
+</Main>
 
 {% endblock %}
